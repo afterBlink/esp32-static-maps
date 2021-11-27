@@ -13,7 +13,7 @@ uint16_t* screen = NULL;
 #endif
 
 unsigned long png_buf_size = 60000;
-uint8_t* pngbuffer = NULL;  // buffer voor 8bpp png file
+uint8_t* pngbuffer = NULL;  // buffer for 8bpp png file
 unsigned long jp = 0;
 
 typedef struct my_private_struct
