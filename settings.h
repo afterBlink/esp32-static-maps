@@ -5,7 +5,7 @@ const uint16_t pixHor = 480;
 const uint16_t pixVer = 320;
 const uint8_t orientation = 1; // landscape
 
-// uncomment this line if your board has PSRAM and you want the displayed map to be stored in PSRAM as well
+// uncomment the following line if your board has PSRAM and you want the displayed map to be stored in PSRAM as well
 //#define HAS_PSRAM
 
 // A map tile provider is identified by its index, passed as first parameter to function do_map()
