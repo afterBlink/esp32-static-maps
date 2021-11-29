@@ -24,6 +24,6 @@ const char *baseurl[] = {                                       // INDEX
 const uint8_t n_urls = sizeof(baseurl) / sizeof(baseurl[0]); 
 
 // desired map center location and zoom level
-double lon = 6.183;   
-double lat = 51.354;  
+double lon = -1.82613;   
+double lat = 51.18698;  
 uint8_t z = 10;
