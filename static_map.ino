@@ -53,6 +53,7 @@ void setup() {
 
   tft.fillScreen(0);
   do_map(4,lat, lon, z);    // first parameter determines tile service (see index in baseurl[] array)
+  print_mapinfo();
 
 #ifdef HAS_PSRAM
   delay(1000);
