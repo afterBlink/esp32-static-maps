@@ -1,4 +1,4 @@
-See license files of the following libraries:
+See license files of the used libraries:
 
 TFT_eSPI: https://github.com/Bodmer/TFT_eSPI/blob/master/license.txt
 PNGdec: https://github.com/bitbank2/PNGdec/blob/master/LICENSE
