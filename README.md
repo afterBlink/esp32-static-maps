@@ -1,5 +1,5 @@
 # esp32_static_maps
-Display geographical maps, assembled from downloaded tiles, on ESP32 + TFT display
+Display geographical maps, assembled from downloaded 256x256 tiles, on ESP32 + TFT display
 
 [![Maps for Makers](https://dellascolto.com/GH_link.jpg)](https://www.youtube.com/watch?v=CYlaHQCsmok)
 
