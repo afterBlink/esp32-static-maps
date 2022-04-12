@@ -35,7 +35,7 @@ void setup() {
   pngbuffer = (uint8_t*)malloc(png_buf_size);
   
 #ifdef HAS_PSRAM
-  screen = (uint16_t*)ps_malloc(screen_buf_size);  // for storing map in PSRAM, e.g. on ESP32 WROVER boards
+  screen = (uint16_t*)ps_malloc(screen_buf_size * sizeof(uint16_t));  // for storing map in PSRAM, e.g. on ESP32 WROVER boards
 #endif
 #ifndef M5STACK
   Serial.begin(115200);     // NEVER include Serial.begin() in your code when using M5Stack or M5Core2 library 
