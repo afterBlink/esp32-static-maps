@@ -1,5 +1,18 @@
 #include <math.h>
 
+typedef struct {
+  float border_n;   // latitude border North
+  float border_e;   // longitude border East
+  float border_s;   // latitude border South
+  float border_w;   // longitude border West
+  double mpp;       // meters per pixel
+  double degpp_hor; // horizontal degrees per pixel, usefull for positioning markers (sprites) and/or get longitude of touch point
+  double degpp_ver; // vertical degrees per pixel, usefull for positioning markers (sprites) and/or get latitude of touch point
+  float max_dist;   // distance from map center to corners (km)
+} Area;
+
+Area myArea;
+
 // Map tile system related functions
 int long2tilex(double lon, int z) {
   return (int)(floor((lon + 180.0) / 360.0 * (1 << z)));
