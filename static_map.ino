@@ -22,6 +22,19 @@ typedef struct my_private_struct
 } PRIVATE;
 PRIVATE priv;
 
+typedef struct {
+  float border_n;   // latitude border North
+  float border_e;   // longitude border East
+  float border_s;   // latitude border South
+  float border_w;   // longitude border West
+  double mpp;       // meters per pixel
+  double degpp_hor; // horizontal degrees per pixel, usefull for positioning markers (sprites) and/or get longitude of touch point
+  double degpp_ver; // vertical degrees per pixel, usefull for positioning markers (sprites) and/or get latitude of touch point
+  float max_dist;   // distance from map center to corners (km)
+} Area;
+
+Area myArea;
+
 int rc;
 char url[100];
 uint8_t si;   // index of baseurl array
