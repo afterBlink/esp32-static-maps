@@ -28,6 +28,7 @@ uint8_t si;   // index of baseurl array
 long tx, ty;  // tile coordinates (within map tile system) of tile that contains center location
 int ctx;      // x-coordinate for posioning center-tile on display
 int cty;      // x-coordinate for posioning center-tile on display
+uint8_t n_tiles = 0;
 
 #include "functions.h"
 
