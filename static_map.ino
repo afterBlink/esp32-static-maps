@@ -53,6 +53,7 @@ void setup() {
 #endif
 
   tft.fillScreen(0);
+  calc_area(lat, lon, z, pixHor, pixVer);
   do_map(4,lat, lon, z);    // first parameter determines tile service (see index in baseurl[] array)
   print_mapinfo();
 
