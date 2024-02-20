@@ -76,7 +76,7 @@ void PNGDraw(PNGDRAW *pDraw)
     int p_offset = 0;  // offset in usPixels
     int new_xoff = priv.xoff;
     if (priv.xoff < 0) {
-      len = _min(pDraw->iWidth + priv.xoff, pixHor + priv.xoff);
+      len = _min(pDraw->iWidth + priv.xoff, pixHor);
       p_offset = -priv.xoff;
       new_xoff = 0;
     } else {
