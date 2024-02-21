@@ -9,17 +9,12 @@ const uint8_t orientation = 1; // landscape
 //#define HAS_PSRAM
 
 // A map tile provider is identified by its index, passed as first parameter to function do_map()
-const char *baseurl[] = {                                       // INDEX
-  "https://tiles.wmflabs.org/osm-no-labels",                      // 0  no texts; rather slow (occasionally a tile may fail) 
-  "https://tiles.wmflabs.org/hikebike",                           // 1  clear map; text has white background 
-  "https://tiles.wmflabs.org/bw-mapnik",                          // 2  nice map; text has white background
-  "https://c.tile.opentopomap.org",                               // 3  well suited for GPS apps; quite fast
-  "https://tile.openstreetmap.org",                               // 4  familiar OSM map
-  "https://a.tile.openstreetmap.fr/hot",                          // 5  nice 'humanitarean' OSM style
-  "https://a.tile.openstreetmap.fr/osmfr",                        // 6  clear and fast
-  "https://tile.memomaps.de/tilegen",                             // 7  clear and reasonably fast
-  "https://cartodb-basemaps-1.global.ssl.fastly.net/dark_all",    // 8  night impression; very fast
-  "http://a.tile.stamen.com/toner"                                // 9  just black & white; super fast (small png files)
+const char *baseurl[] = {                                         // INDEX
+  "https://c.tile.opentopomap.org",                               // 0  well suited for GPS apps; quite fast
+  "https://tile.openstreetmap.org",                               // 1  familiar OSM map
+  "https://a.tile.openstreetmap.fr/hot",                          // 2  nice 'humanitarean' OSM style
+  "https://a.tile.openstreetmap.fr/osmfr",                        // 3  clear and fast
+  "https://cartodb-basemaps-1.global.ssl.fastly.net/dark_all"     // 4  night impression; very fast
 };
 const uint8_t n_urls = sizeof(baseurl) / sizeof(baseurl[0]); 
 
